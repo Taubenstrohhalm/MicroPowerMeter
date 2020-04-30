@@ -1,0 +1,77 @@
+<svg version="1.1" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <title>Watt Gauge</title>
+ <defs>
+  <marker id="marker42986" overflow="visible" orient="auto">
+   <path transform="scale(.6)" d="m8.7186 4.0337-10.926-4.0177 10.926-4.0177c-1.7455 2.3721-1.7354 5.6175-6e-7 8.0354z" fill="#6981b4" fill-rule="evenodd" stroke="#6981b4" stroke-linejoin="round" stroke-width=".625"/>
+  </marker>
+  <marker id="marker42808" overflow="visible" orient="auto">
+   <path transform="scale(.6)" d="m8.7186 4.0337-10.926-4.0177 10.926-4.0177c-1.7455 2.3721-1.7354 5.6175-6e-7 8.0354z" fill="#d45e46" fill-rule="evenodd" stroke="#d45e46" stroke-linejoin="round" stroke-width=".625"/>
+  </marker>
+  <marker id="marker42642" overflow="visible" orient="auto">
+   <path transform="scale(.6)" d="m8.7186 4.0337-10.926-4.0177 10.926-4.0177c-1.7455 2.3721-1.7354 5.6175-6e-7 8.0354z" fill="#d45e46" fill-rule="evenodd" stroke="#d45e46" stroke-linejoin="round" stroke-width=".625"/>
+  </marker>
+  <marker id="marker3393" overflow="visible" orient="auto">
+   <path transform="scale(.6)" d="m8.7186 4.0337-10.926-4.0177 10.926-4.0177c-1.7455 2.3721-1.7354 5.6175-6e-7 8.0354z" fill="#d45e46" fill-rule="evenodd" stroke="#d45e46" stroke-linejoin="round" stroke-width=".625"/>
+  </marker>
+  <marker id="Arrow2Mstart" overflow="visible" orient="auto">
+   <path transform="scale(.6)" d="m8.7186 4.0337-10.926-4.0177 10.926-4.0177c-1.7455 2.3721-1.7354 5.6175-6e-7 8.0354z" fill="#191919" fill-rule="evenodd" stroke="#191919" stroke-linejoin="round" stroke-width=".625"/>
+  </marker>
+  <marker id="marker3313" overflow="visible" orient="auto">
+   <path transform="scale(.8)" d="m0.022727-0.74009v1.4375l-7.7812 2.3125h18.437l-7.1875-2.3125v-1.4375l7.25-2.1562h-18.469z" fill="#191919" fill-rule="evenodd" stroke="#191919" stroke-width=".1pt"/>
+  </marker>
+  <marker id="marker3267" overflow="visible" orient="auto">
+   <g transform="scale(-1.2)">
+    <path d="m-3.8049-3.9585 4.3484 3.9585" fill="#191919" fill-rule="evenodd" stroke="#191919" stroke-linecap="round" stroke-width=".8"/>
+    <path d="m-1.2867-3.9585 4.3484 3.9585" fill="#191919" fill-rule="evenodd" stroke="#191919" stroke-linecap="round" stroke-width=".8"/>
+    <path d="m1.3054-3.9585 4.3484 3.9585" fill="#191919" fill-rule="evenodd" stroke="#191919" stroke-linecap="round" stroke-width=".8"/>
+    <path d="m-3.8049 4.1776 4.3484-3.9578" fill="#191919" fill-rule="evenodd" stroke="#191919" stroke-linecap="round" stroke-width=".8"/>
+    <path d="m-1.2867 4.1776 4.3484-3.9578" fill="#191919" fill-rule="evenodd" stroke="#191919" stroke-linecap="round" stroke-width=".8"/>
+    <path d="m1.3054 4.1776 4.3484-3.9578" fill="#191919" fill-rule="evenodd" stroke="#191919" stroke-linecap="round" stroke-width=".8"/>
+   </g>
+  </marker>
+  <linearGradient id="linearGradient32291" x1="30.8" x2="159.48" y1="28.339" y2="165.21" gradientUnits="userSpaceOnUse">
+   <stop stop-color="#d2d2be" offset="0"/>
+   <stop stop-color="#e6e6dc" offset="1"/>
+  </linearGradient>
+  <linearGradient id="linearGradient32299" x1="146.41" x2="80.741" y1="195.52" y2="70.26" gradientUnits="userSpaceOnUse">
+   <stop stop-color="#f0f0e6" offset="0"/>
+   <stop stop-color="#f0f0e6" stop-opacity="0" offset="1"/>
+  </linearGradient>
+ </defs>
+ <g>
+  <circle cx="99.939" cy="100.06" r="93.993" fill="#edeeed"/>
+ </g>
+ <g>
+  <g fill="none" stroke-linecap="round">
+   <path transform="translate(-1667 101.54)" d="m1700.5 64.987c-17.627-17.627-27.53-41.535-27.53-66.463 0-24.928 9.9028-48.836 27.53-66.463 17.627-17.627 41.535-27.53 66.463-27.53 24.928 1e-6 48.836 9.9028 66.463 27.53s27.53 41.535 27.53 66.463-9.9028 48.836-27.53 66.463m-132.93 0 6.6813-6.6813m-16.246-4.5145 3.0571-2.2223m-10.756-10.33 3.3667-1.7176m-9.0105-11.883 3.5937-1.1707m-7.0441-13.144 3.7324-0.5951m-4.9047-14.083 9.4488-0.012173m-8.3143-14.669 3.7339 0.58548m-0.3204-14.909 3.5967 1.1615m2.012-14.776 3.3712 1.7089m4.2952-14.281 3.0628 2.2145m6.4729-13.435 6.6985 6.6641m4.4726-16.258 2.2302 3.0514m10.302-10.782 1.7263 3.3623m11.86-9.0411 1.1799 3.5906m13.126-7.0779 0.6047 3.7308m14.071-4.941 0.036 9.4487m14.648-8.3521-0.5758 3.7354m14.908-0.35881-1.1522 3.5996m14.782 1.974-1.7003 3.3755m14.292 4.2584-2.2066 3.0685m13.452 6.4382-6.6468 6.7157m16.269 4.4307-3.0457 2.2381m10.809 10.274-3.3578 1.7349m9.0716 11.836-3.5875 1.1892m7.1117 13.108-3.7293 0.61432m4.9772 14.058-9.4486 0.060864m8.3898 14.626-3.7369-0.56623m0.3972 14.908-3.6025-1.1429m-1.936 14.787-3.3798-1.6915m-4.2216 14.303-3.0742-2.1986m-6.4036 13.468-6.7327-6.6295" stroke="#191932" stroke-linejoin="bevel" stroke-miterlimit="1" stroke-width="1.5"/>
+   <g stroke="#6981b4" stroke-width="2.073">
+    <path d="m79.948 173.09h38.004" marker-mid="url(#marker42808)"/>
+    <path d="m79.948 176.54h10.365" marker-mid="url(#marker42642)"/>
+    <path d="m93.767 176.54h10.365" marker-mid="url(#marker3393)"/>
+    <path d="m107.59 176.54h10.365" marker-mid="url(#marker42986)"/>
+   </g>
+  </g>
+  <text x="58.538754" y="164.37239" fill="#5b76ae" fill-opacity=".90196" font-family="'Ubuntu Condensed'" font-size="29.482px" letter-spacing="0px" stroke-width=".69098" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="58.538746" y="164.37239" fill="#5b76ae" fill-opacity=".90196" stroke-width=".69098">Ampere</tspan></text>
+  <g fill="#191932" font-family="'Ubuntu Condensed'" letter-spacing="0px" word-spacing="0px">
+   <text x="23.641953" y="106.00819" style="line-height:1.25" xml:space="preserve"><tspan x="23.641953" y="106.00819" fill="#191932" font-size="16px">2.5</tspan></text>
+   <text x="47.168507" y="155.10738" style="line-height:1.25" xml:space="preserve"><tspan x="47.168507" y="155.10738" fill="#191932" font-size="16px">0</tspan></text>
+   <text x="48.083511" y="56.138393" style="line-height:1.25" xml:space="preserve"><tspan x="48.083511" y="56.138393" fill="#191932" font-size="16px">5</tspan></text>
+   <text x="90.752106" y="36.151604" style="line-height:1.25" xml:space="preserve"><tspan x="90.752106" y="36.151604" fill="#191932" font-size="16px">7.5</tspan></text>
+   <text x="139.88931" y="59.456146" style="line-height:1.25" xml:space="preserve"><tspan x="139.88931" y="59.456146" fill="#191932" font-size="16px">10</tspan></text>
+   <text x="150.26437" y="104.81619" style="line-height:1.25" xml:space="preserve"><tspan x="150.26437" y="104.81619" fill="#191932" font-size="16px">12.5</tspan></text>
+   <text x="141.16394" y="151.53802" style="line-height:1.25" xml:space="preserve"><tspan x="141.16394" y="151.53802" fill="#191932" font-size="16px">15</tspan></text>
+  </g>
+ </g>
+ <g>
+  <path d="m99.94 1.1191a98.94 98.94 0 0 0-98.94 98.939 98.94 98.94 0 0 0 98.94 98.941 98.94 98.94 0 0 0 98.94-98.941 98.94 98.94 0 0 0-98.94-98.939zm0 4.9473a93.993 93.993 0 0 1 93.992 93.992 93.993 93.993 0 0 1-93.992 93.994 93.993 93.993 0 0 1-93.992-93.994 93.993 93.993 0 0 1 93.992-93.992z" fill="url(#linearGradient32291)"/>
+  <path d="m99.94 1.1191c-54.643 2.397e-4 -98.939 44.297-98.94 98.939-8.196e-4 54.643 44.296 98.941 98.94 98.941 54.643-2.4e-4 98.94-44.298 98.94-98.941-2.6e-4 -54.643-44.297-98.939-98.94-98.939z" fill="none" stroke="url(#linearGradient32299)" stroke-linejoin="bevel" stroke-miterlimit="1"/>
+ </g>
+ <g>
+  <path id="ampereArrow" d="m41.985 157.97 36.564-36.556 31.626-32.195" fill="none" marker-end="url(#marker3267)" marker-mid="url(#marker3313)" marker-start="url(#Arrow2Mstart)" stroke="#191919" stroke-miterlimit="1.2"/>
+  <circle cx="100" cy="100" r="5" fill="#191919"/>
+ </g>
+ <g>
+  <ellipse transform="rotate(-45)" cx="-1.0346" cy="89.37" rx="13.587" ry="10.612" fill="#fafafa" fill-opacity=".4902"/>
+  <path d="m188.14 67.898c-2.6987 16.247-8.9914 54.145-37.646 83.076-28.655 28.93-73.509 31.977-91.897 33.402 12.681 6.4192 26.722 9.792 40.74 9.792 51.912 6.4e-4 94.634-41.673 94.633-93.585-0.65953-22.602-3.8998-26.266-5.8297-32.685z" fill="#d9e4ed" fill-opacity=".29412"/>
+ </g>
+</svg>

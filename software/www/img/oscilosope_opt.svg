@@ -1,0 +1,93 @@
+<svg id="graph" version="1.1" viewBox="0 0 600 300" xmlns="http://www.w3.org/2000/svg">
+ <g font-family="'Ubuntu Condensed'" letter-spacing="0px" word-spacing="0px">
+  <g font-size="21.333px">
+   <text transform="rotate(-90)" x="35.944988" y="644.48572" style="line-height:1.25" xml:space="preserve"><tspan x="35.944988" y="644.48572">ampere</tspan></text>
+   <text transform="rotate(-90)" x="37.549267" y="691.94336" style="line-height:1.25" xml:space="preserve"><tspan x="37.549267" y="691.94336">volt</tspan></text>
+   <text transform="rotate(-90)" x="37.549267" y="732.62134" style="line-height:1.25" xml:space="preserve"><tspan x="37.549267" y="732.62134">watt</tspan></text>
+   <text x="630.28076" y="83.426041" style="line-height:1.25" xml:space="preserve"><tspan x="630.28076" y="83.426041">15</tspan></text>
+   <text x="630.28076" y="44.923363" style="line-height:1.25" xml:space="preserve"><tspan x="630.28076" y="44.923363">17.5</tspan></text>
+   <text x="630.28076" y="13.639941" style="line-height:1.25" xml:space="preserve"><tspan x="630.28076" y="13.639941">20</tspan></text>
+   <text x="630.28076" y="122.73085" style="line-height:1.25" xml:space="preserve"><tspan x="630.28076" y="122.73085">12.5</tspan></text>
+   <text x="630.28076" y="194.49554" style="line-height:1.25" xml:space="preserve"><tspan x="630.28076" y="194.49554">7.5</tspan></text>
+   <text x="630.28076" y="267.11581" style="line-height:1.25" xml:space="preserve"><tspan x="630.28076" y="267.11581">2.5</tspan></text>
+   <text x="676.23181" y="47.329781" style="line-height:1.25" xml:space="preserve"><tspan x="676.23181" y="47.329781">35</tspan></text>
+   <text x="676.23181" y="12.83781" style="line-height:1.25" xml:space="preserve"><tspan x="676.23181" y="12.83781">40</tspan></text>
+   <text x="676.23181" y="82.413429" style="line-height:1.25" xml:space="preserve"><tspan x="676.23181" y="82.413429">30</tspan></text>
+  </g>
+  <g font-size="22.317px" stroke-width="1.0461">
+   <text x="676.19049" y="122.50475" style="line-height:1.25" xml:space="preserve"><tspan x="676.19049" y="122.50475" stroke-width="1.0461">25</tspan></text>
+   <text x="676.19049" y="160.14134" style="line-height:1.25" xml:space="preserve"><tspan x="676.19049" y="160.14134" stroke-width="1.0461">20</tspan></text>
+   <text x="676.19049" y="194.48344" style="line-height:1.25" xml:space="preserve"><tspan x="676.19049" y="194.48344" stroke-width="1.0461">15</tspan></text>
+   <text x="676.19049" y="229.61592" style="line-height:1.25" xml:space="preserve"><tspan x="676.19049" y="229.61592" stroke-width="1.0461">10</tspan></text>
+   <text x="678.59692" y="298.96375" style="line-height:1.25" xml:space="preserve"><tspan x="678.59692" y="298.96375" stroke-width="1.0461">0</tspan></text>
+  </g>
+  <g font-size="21.333px">
+   <text x="713.89661" y="48.934059" style="line-height:1.25" xml:space="preserve"><tspan x="713.89661" y="48.934059">525</tspan></text>
+   <text x="713.89661" y="14.442088" style="line-height:1.25" xml:space="preserve"><tspan x="713.89661" y="14.442088">600</tspan></text>
+   <text x="713.89661" y="159.62926" style="line-height:1.25" xml:space="preserve"><tspan x="713.89661" y="159.62926">300</tspan></text>
+   <text x="713.89661" y="122.73086" style="line-height:1.25" xml:space="preserve"><tspan x="713.89661" y="122.73086">375</tspan></text>
+   <text x="713.89661" y="82.623909" style="line-height:1.25" xml:space="preserve"><tspan x="713.89661" y="82.623909">450</tspan></text>
+   <text x="713.89661" y="228.18538" style="line-height:1.25" xml:space="preserve"><tspan x="713.89661" y="228.18538">150</tspan></text>
+   <text x="713.89661" y="193.69342" style="line-height:1.25" xml:space="preserve"><tspan x="713.89661" y="193.69342">225</tspan></text>
+   <text x="713.89661" y="267.11581" style="line-height:1.25" xml:space="preserve"><tspan x="713.89661" y="267.11581">75</tspan></text>
+   <text x="631.78735" y="158.5527" style="line-height:1.25" xml:space="preserve"><tspan x="631.78735" y="158.5527">10</tspan></text>
+   <text x="631.78735" y="229.24081" style="line-height:1.25" xml:space="preserve"><tspan x="631.78735" y="229.24081">5</tspan></text>
+   <text x="680" y="267.54004" style="line-height:1.25" xml:space="preserve"><tspan x="680" y="267.54004">5</tspan></text>
+  </g>
+ </g>
+ <g fill="#191932">
+  <circle cx="613.4" cy="294.63" r="5"/>
+  <circle cx="612.99" cy="258.93" r="5"/>
+  <circle cx="613.8" cy="220.4" r="5"/>
+  <circle cx="614.2" cy="188.32" r="5"/>
+  <circle cx="614.6" cy="149.84" r="5"/>
+  <circle cx="614.2" cy="114.55" r="5"/>
+  <circle cx="613.8" cy="78.048" r="5"/>
+  <circle cx="614.5" cy="42.049" r="5"/>
+  <circle cx="614.5" cy="5.9529" r="5"/>
+ </g>
+ <rect width="600" height="300" fill="#042129"/>
+ <g fill="none" stroke="#fff" stroke-width="1px">
+  <g transform="matrix(1.0112 0 0 1 -6.7055 0)">
+   <path d="m600 300h-593.37"/>
+   <path d="m600 270h-500"/>
+   <path d="m600 240h-500"/>
+   <path d="m600 210h-500"/>
+   <path d="m600 180h-500"/>
+   <path d="m600 150h-500"/>
+   <path d="m600 120h-500"/>
+   <path d="m600 90h-500"/>
+   <path d="m600 0h-593.37"/>
+   <path d="m600 30h-500"/>
+   <path d="m600 60h-500"/>
+  </g>
+  <g transform="matrix(.0055172 0 0 1 60.483 0)">
+   <path d="m600 300h-500"/>
+   <path d="m600 270h-500"/>
+   <path d="m600 240h-500"/>
+   <path d="m600 210h-500"/>
+   <path d="m600 180h-500"/>
+   <path d="m600 150h-500"/>
+   <path d="m600 120h-500"/>
+   <path d="m600 90h-500"/>
+   <path d="m600 0h-500"/>
+   <path d="m600 30h-500"/>
+   <path d="m600 60h-500"/>
+  </g>
+  <g transform="matrix(.0055172 0 0 1 35.147 0)">
+   <path d="m600 300h-500"/>
+   <path d="m600 270h-500"/>
+   <path d="m600 240h-500"/>
+   <path d="m600 210h-500"/>
+   <path d="m600 180h-500"/>
+   <path d="m600 150h-500"/>
+   <path d="m600 120h-500"/>
+   <path d="m600 90h-500"/>
+   <path d="m600 0h-500"/>
+   <path d="m600 30h-500"/>
+   <path d="m600 60h-500"/>
+  </g>
+ </g>
+ <path d="m0 300v-300m0 300h7.5m-7.5-3h3.5m-3.5-3h3.5m-3.5-3h3.5m-3.5-3h3.5m-3.5-3h7.5m-7.5-3h3.5m-3.5-3h3.5m-3.5-3h3.5m-3.5-3h3.5m-3.5-3h7.5m-7.5-3h3.5m-3.5-3h3.5m-3.5-3h3.5m-3.5-3h3.5m-3.5-3h7.5m-7.5-3h3.5m-3.5-3h3.5m-3.5-3h3.5m-3.5-3h3.5m-3.5-3h7.5m-7.5-3h3.5m-3.5-3h3.5m-3.5-3h3.5m-3.5-3h3.5m-3.5-3h7.5m-7.5-3h3.5m-3.5-3h3.5m-3.5-3h3.5m-3.5-3h3.5m-3.5-3h7.5m-7.5-3h3.5m-3.5-3h3.5m-3.5-3h3.5m-3.5-3h3.5m-3.5-3h7.5m-7.5-3h3.5m-3.5-3h3.5m-3.5-3h3.5m-3.5-3h3.5m-3.5-3h7.5m-7.5-3h3.5m-3.5-3h3.5m-3.5-3h3.5m-3.5-3h3.5m-3.5-3h7.5m-7.5-3h3.5m-3.5-3h3.5m-3.5-3h3.5m-3.5-3h3.5m-3.5-3h7.5m-7.5-3h3.5m-3.5-3h3.5m-3.5-3h3.5m-3.5-3h3.5m-3.5-3h7.5m-7.5-3h3.5m-3.5-3h3.5m-3.5-3h3.5m-3.5-3h3.5m-3.5-3h7.5m-7.5-3h3.5m-3.5-3h3.5m-3.5-3h3.5m-3.5-3h3.5m-3.5-3h7.5m-7.5-3h3.5m-3.5-3h3.5m-3.5-3h3.5m-3.5-3h3.5m-3.5-3h7.5m-7.5-3h3.5m-3.5-3h3.5m-3.5-3h3.5m-3.5-3h3.5m-3.5-3h7.5m-7.5-3h3.5m-3.5-3h3.5m-3.5-3h3.5m-3.5-3h3.5m-3.5-3h7.5m-7.5-3h3.5m-3.5-3h3.5m-3.5-3h3.5m-3.5-3h3.5m-3.5-3h7.5m-7.5-3h3.5m-3.5-3h3.5m-3.5-3h3.5m-3.5-3h3.5m-3.5-3h7.5m-7.5-3h3.5m-3.5-3h3.5m-3.5-3h3.5m-3.5-3h3.5m-3.5-3h7.5m-7.5-3h3.5m-3.5-3h3.5m-3.5-3h3.5m-3.5-3h3.5m-3.5-3h7.5" fill="#fff" stroke="#fff" stroke-linecap="round"/>
+ <path d="m600 0v300m0-300h-7.5m7.5 3h-3.5m3.5 3h-3.5m3.5 3h-3.5m3.5 3h-3.5m3.5 3h-7.5m7.5 3h-3.5m3.5 3h-3.5m3.5 3h-3.5m3.5 3h-3.5m3.5 3h-7.5m7.5 3h-3.5m3.5 3h-3.5m3.5 3h-3.5m3.5 3h-3.5m3.5 3h-7.5m7.5 3h-3.5m3.5 3h-3.5m3.5 3h-3.5m3.5 3h-3.5m3.5 3h-7.5m7.5 3h-3.5m3.5 3h-3.5m3.5 3h-3.5m3.5 3h-3.5m3.5 3h-7.5m7.5 3h-3.5m3.5 3h-3.5m3.5 3h-3.5m3.5 3h-3.5m3.5 3h-7.5m7.5 3h-3.5m3.5 3h-3.5m3.5 3h-3.5m3.5 3h-3.5m3.5 3h-7.5m7.5 3h-3.5m3.5 3h-3.5m3.5 3h-3.5m3.5 3h-3.5m3.5 3h-7.5m7.5 3h-3.5m3.5 3h-3.5m3.5 3h-3.5m3.5 3h-3.5m3.5 3h-7.5m7.5 3h-3.5m3.5 3h-3.5m3.5 3h-3.5m3.5 3h-3.5m3.5 3h-7.5m7.5 3h-3.5m3.5 3h-3.5m3.5 3h-3.5m3.5 3h-3.5m3.5 3h-7.5m7.5 3h-3.5m3.5 3h-3.5m3.5 3h-3.5m3.5 3h-3.5m3.5 3h-7.5m7.5 3h-3.5m3.5 3h-3.5m3.5 3h-3.5m3.5 3h-3.5m3.5 3h-7.5m7.5 3h-3.5m3.5 3h-3.5m3.5 3h-3.5m3.5 3h-3.5m3.5 3h-7.5m7.5 3h-3.5m3.5 3h-3.5m3.5 3h-3.5m3.5 3h-3.5m3.5 3h-7.5m7.5 3h-3.5m3.5 3h-3.5m3.5 3h-3.5m3.5 3h-3.5m3.5 3h-7.5m7.5 3h-3.5m3.5 3h-3.5m3.5 3h-3.5m3.5 3h-3.5m3.5 3h-7.5m7.5 3h-3.5m3.5 3h-3.5m3.5 3h-3.5m3.5 3h-3.5m3.5 3h-7.5m7.5 3h-3.5m3.5 3h-3.5m3.5 3h-3.5m3.5 3h-3.5m3.5 3h-7.5m7.5 3h-3.5m3.5 3h-3.5m3.5 3h-3.5m3.5 3h-3.5m3.5 3h-7.5" fill="#fff" stroke="#fff" stroke-linecap="round"/>
+</svg>

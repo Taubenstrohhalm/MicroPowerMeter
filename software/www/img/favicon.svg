@@ -1,0 +1,46 @@
+<svg version="1.1" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <radialGradient id="radialGradient2862" cx="-100" cy="-632.17" r="98.939" gradientTransform="matrix(1 0 0 1 199.94 732.24)" gradientUnits="userSpaceOnUse">
+   <stop stop-color="#6b9357" offset="0"/>
+   <stop stop-color="#a7a45f" offset=".94701"/>
+   <stop stop-color="#d1cfa4" offset="1"/>
+  </radialGradient>
+  <marker id="Arrow2Mstart" overflow="visible" orient="auto">
+   <path transform="scale(.6)" d="m8.7186 4.0337-10.926-4.0177 10.926-4.0177c-1.7455 2.3721-1.7354 5.6175-6e-7 8.0354z" fill-rule="evenodd" stroke="#000" stroke-linejoin="round" stroke-width=".625"/>
+  </marker>
+  <marker id="marker3313" overflow="visible" orient="auto">
+   <path transform="scale(.8)" d="m0.022727-0.74009v1.4375l-7.7812 2.3125h18.437l-7.1875-2.3125v-1.4375l7.25-2.1562h-18.469z" fill-rule="evenodd" stroke="#000" stroke-width=".1pt"/>
+  </marker>
+  <marker id="marker3267" overflow="visible" orient="auto">
+   <g transform="scale(-1.2)">
+    <path d="m-3.8049-3.9585 4.3484 3.9585" fill-rule="evenodd" stroke="#000" stroke-linecap="round" stroke-width=".8"/>
+    <path d="m-1.2867-3.9585 4.3484 3.9585" fill-rule="evenodd" stroke="#000" stroke-linecap="round" stroke-width=".8"/>
+    <path d="m1.3054-3.9585 4.3484 3.9585" fill-rule="evenodd" stroke="#000" stroke-linecap="round" stroke-width=".8"/>
+    <path d="m-3.8049 4.1776 4.3484-3.9578" fill-rule="evenodd" stroke="#000" stroke-linecap="round" stroke-width=".8"/>
+    <path d="m-1.2867 4.1776 4.3484-3.9578" fill-rule="evenodd" stroke="#000" stroke-linecap="round" stroke-width=".8"/>
+    <path d="m1.3054 4.1776 4.3484-3.9578" fill-rule="evenodd" stroke="#000" stroke-linecap="round" stroke-width=".8"/>
+   </g>
+  </marker>
+ </defs>
+ <circle cx="99.939" cy="100.06" r="93.993" fill="#edeeed"/>
+ <path transform="translate(-1667 101.54)" d="m1689.2 51.375c-12.892-18.961-18.41-41.98-15.513-64.725 2.8966-22.745 14.007-43.647 31.24-58.771 17.233-15.124 39.4-23.427 62.329-23.347 22.928 0.08042 45.037 8.5391 62.164 23.784s28.09 36.224 30.828 58.989-2.9415 45.745-15.967 64.615m-155.08-0.54392 7.8137-5.3129m-11.808-1.1021 3.2861-1.8672m-6.7524-4.8479 3.4255-1.5972m-6.3411-5.3747 3.5427-1.3168m-5.8888-5.8668 3.637-1.028m-5.3984-6.3209 3.7078-0.73248m-4.8732-6.7341 3.7547-0.43225m-4.3164-7.1039 3.7773-0.12921m-3.7319-7.4277 3.7755 0.17465m-3.1231-7.7035 3.7493 0.47739m-2.4942-7.9295 9.247 1.9426m-7.3972-9.2698 3.6244 1.0717m-1.1921-8.2265 3.5266 1.3594m-0.5273-8.2957 3.406 1.6383m0.1408-8.3113 3.2634 1.9066m0.8081-8.2731 3.0996 2.1626m1.4701-8.1814 2.9159 2.4046m2.1226-8.0369 2.7133 2.6311m2.7613-7.8404 2.4932 2.8406m3.3823-7.5932 2.2569 3.0317m3.9813-7.297 5.0152 8.008m1.5456-11.758 1.7422 3.354m5.0986-6.5652 1.4672 3.4831m5.6095-6.1344 1.1826 3.5897m6.0842-5.6639 0.8904 3.6731m6.5196-5.1568 0.5924 3.7328m6.9127-4.6164 0.2907 3.7683m7.2613-4.0462-0.013 3.7795m7.5628-3.4497-0.3166 3.7662m7.8155-2.831-0.6181 3.7286m8.0177-2.194-2.2892 9.1673m9.5415-7.0432-1.2073 3.5815m8.2656-0.88167-1.4911 3.473m8.3097-0.21481-1.7653 3.3419m8.3001 0.45344-2.0281 3.1893m8.2368 1.1188-2.2777 3.0161m8.1204 1.7769-2.5127 2.8234m7.9514 2.4235-2.7314 2.6124m7.731 3.0544-2.9324 2.3845m7.4606 3.6656-3.1145 2.1412m7.142 4.2531-8.191 4.7103m11.692 1.9869-3.4172 1.6148m6.3687 5.342-3.5359 1.3351m5.9189 5.8363-3.6316 1.0467m5.4309 6.293-3.704 0.75158m4.9078 6.7089-3.7524 0.45159m4.353 7.0815-3.7766 0.14868m3.7701 7.4083-3.7763-0.1552m3.1627 7.6873-3.7517-0.45807m2.535 7.9165-3.7027-0.75798m1.8908 8.0946-9.0747-2.6325m6.6792 9.7998-3.5335-1.3412m0.57 8.2929-3.4144-1.6207m-0.098 8.3119-3.2731-1.8898m-0.7655 8.2771-3.1107-2.1466" fill="none" stroke="#0f110c" stroke-linecap="round" stroke-linejoin="bevel" stroke-miterlimit="1" stroke-width="1.5"/>
+ <path id="wattArrow" d="m153.12 37.437-33.529 39.358-28.955 34.617" fill="none" marker-end="url(#marker3267)" marker-mid="url(#marker3313)" marker-start="url(#Arrow2Mstart)" stroke="#000" stroke-miterlimit="1.2"/>
+ <circle cx="100" cy="100" r="5" fill="#38413a"/>
+ <text x="71.946434" y="164.23483" fill="#638725" fill-opacity=".90196" font-family="'Ubuntu Condensed'" font-size="29.482px" letter-spacing="0px" stroke-width=".69098" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="71.946434" y="164.23483" fill="#638725" fill-opacity=".90196" stroke-width=".69098">Watt</tspan></text>
+ <g fill="none" stroke="#7d9b4b" stroke-linecap="round" stroke-width="2.073">
+  <path d="m79.948 173.09h38.004"/>
+  <path d="m79.948 176.54h10.365"/>
+  <path d="m93.767 176.54h10.365"/>
+  <path d="m107.59 176.54h10.365"/>
+ </g>
+ <g fill="#000000" font-family="'Ubuntu Condensed'" font-size="21.333px" letter-spacing="0px" word-spacing="0px">
+  <text x="39.438168" y="144.35867" style="line-height:1.25" xml:space="preserve"><tspan x="39.438168" y="144.35867" font-size="16px">0</tspan></text>
+  <text x="25.567957" y="91.836266" style="line-height:1.25" xml:space="preserve"><tspan x="25.567957" y="91.836266" font-size="16px">100</tspan></text>
+  <text x="54.680885" y="48.390987" style="line-height:1.25" xml:space="preserve"><tspan x="54.680885" y="48.390987" font-size="16px">200</tspan></text>
+  <text x="105.11147" y="38.201145" style="line-height:1.25" xml:space="preserve"><tspan x="105.11147" y="38.201145" font-size="16px">300</tspan></text>
+  <text x="145.75389" y="72.664886" style="line-height:1.25" xml:space="preserve"><tspan x="145.75389" y="72.664886" font-size="16px">400</tspan></text>
+  <text x="151.32127" y="123.90699" style="line-height:1.25" xml:space="preserve"><tspan x="151.32127" y="123.90699" font-size="16px">500</tspan></text>
+ </g>
+ <ellipse transform="rotate(-45)" cx="-11.392" cy="91.513" rx="13.587" ry="10.612" fill="#f6fbfd" fill-opacity=".5098"/>
+ <path d="m99.94 1.1191a98.94 98.94 0 0 0-98.94 98.939 98.94 98.94 0 0 0 98.94 98.941 98.94 98.94 0 0 0 98.94-98.941 98.94 98.94 0 0 0-98.94-98.939zm0 4.9473a93.993 93.993 0 0 1 93.992 93.992 93.993 93.993 0 0 1-93.992 93.994 93.993 93.993 0 0 1-93.992-93.994 93.993 93.993 0 0 1 93.992-93.992z" fill="url(#radialGradient2862)"/>
+</svg>

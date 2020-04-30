@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css", href="/css/stylesheet.css">
+    <link rel="stylesheet" type="text/css", href="/css/display.css">
+    <link rel="stylesheet" type="text/css", href="/css/chart.css">
+    <!-- <script src = 'https://d3.org/d3.min.js'></script> -->
+    <script src = '/js/d3/d3-dsv.min.js'></script>
+    <script src = '/js/d3/d3-fetch.min.js'></script>
+    <script src = '/js/d3/d3-shape.v1.min.js.gz'></script>
+    <script src = '/js/d3/d3-scale.v3.min.js.gz'></script>
+    <script src = '/js/d3/d3-ease.min.js'></script>
+    <script src = '/js/d3/d3-dispatch.min.js'></script>
+    <script src = '/js/d3/d3-timer.min.js.gz'></script>
+    <script src = '/js/d3/d3-interpolate.min.js'></script>
+    <script src = '/js/d3/d3-selection.min.js.gz'></script>
+    <script src = '/js/d3/d3-transition.min.js.gz'></script>
+    <script src = '/js/d3/d3-format.min.js'></script>
+    <script src = '/js/d3/d3-collection.min.js'></script>
+    <script src = '/js/d3/d3-array.v2.min.js'></script>
+    <script src = '/js/d3/d3-time-format.v2.min.js'></script>
+    <script src = '/js/d3/d3-time.min.js'></script>
+    <script src = '/js/d3/d3-color.min.js.gz'></script>
+    <script src = '/js/d3/d3-path.v1.min.js'></script>
+    <script src = '/js/d3/d3-axis.v1.min.js'></script>
+
+</head>
+
+<body>
+
+    <script>
+        var volt_max = 40,
+            current_max = 20,
+            power_max = 600;    
+    </script>
+
+    <div class = "heading-container">
+        <h1>MicroPowerMeter</h1>
+        <!-- <div id="settings_icon"></div> -->
+    </div>
+
+    <div class = "flex-container">
+        <div id = "display_voltage_container"></div>
+        <div id = "display_current_container"></div>
+        <div id = "display_power_container"></div>
+    </div>
+
+    <div class = "flex-container">
+        <div id = "graph_container"></div>
+    </div>
+
+    <div class = "flex-container" id = "graph_panel_container">
+        <div>
+            <form>
+                <label for="voltage_visibility">V</label>
+                <input type="checkbox" id="voltage_visibility" checked>
+                <button id="voltage_scale_input_decrement" type="button"><</button>
+                <span id="voltage_scale" style="color:red">5</span>
+                <button id="voltage_scale_input_increment" type="button">></button>
+            </form>
+        </div>
+        <div>
+            <form>
+                <label for="current_visibility">A</label>
+                <input type="checkbox" id="current_visibility" checked>
+                <input type="number" value="1.5" step="0.1" id="current_scale" name="current_scale" style="width: 3em;">
+            </form>
+        </div>
+        <div>
+            <form>
+                <label for="power_visibility">W</label>
+                <input type="checkbox" id="power_visibility" checked>
+                <input type="number" value="20" step="5" id="power_scale" name="power_scale" style="width: 3em;">
+            </form>
+        </div>
+        <div>
+            <form>
+                <label for="time_duration">Time</label>
+                <input type="checkbox" id="time_visibility" checked><br>
+                <input type="number" value="30" step="5" min="10" id="time_duration" name="time_duration" style="width: 4em;">
+            </form>
+        </div>
+    </div>
+
+    <div class = "flex-container" id="terminal_panel_container">
+        <div class = "get-file-container">
+            <form>
+                <label for="get_file">Get a file:</label><br>
+                <input type="text" id="get_file" size="12" name="get_file">
+                <input type="submit" value="Get from device">
+            </form>
+        </div>
+        <div class = "send-file-container">
+            <form>
+                <label for="send_file">Send a file</label><br>
+                <input type="file" id="send_file" name="send_file" size="20">
+            </form>
+        </div>
+        <div class = "set-debug-container">
+            <form>
+                <label for="debug_level">Set debug level</label><br>
+                <select id="debug_level" name="debug_level">
+                    <option value="info">info</option>
+                    <option value="debug">debug</option>
+                    <option value="warning">warning</option>
+                    <option value="error">error</option>
+                    <option value="critical">critical</option>
+                </select>
+                <input type="submit" value="submit">
+            </form>
+        </div>
+    </div>
+    <div class = "flex-container">
+        <div id = "terminal_container">
+        </div>
+    </div>
+    
+    <div class="callout">
+        <div class="callout-header">webREPL is not jet fully implemented!</div>
+        <span class="closebtn"
+        onclick="this.parentElement.style.display='none'">&times;</span>
+        <div class="callout-container">
+            <p>To access the hosted version please go to:</p>
+            <a href="http://micropython.org/webrepl/">http://micropython.org/webrepl/</a>
+        </div>
+    </div>
+
+    <script>
+        var display = 'display' // choose ['display', 'gauge']
+        d3.xml('/img/' + display + '_voltage_opt.svg')
+            .then(data => {
+                d3.select('#display_voltage_container').node().append(data.documentElement)
+            })
+        d3.xml('/img/' + display + '_current_opt.svg')
+            .then(data => {
+                d3.select('#display_current_container').node().append(data.documentElement)
+            })
+        d3.xml('/img/' + display + '_power_opt.svg')
+            .then(data => {
+                d3.select('#display_power_container').node().append(data.documentElement)
+            })
+        d3.xml('/img/oscilosope_opt.svg')
+            .then(data => {
+                d3.select('#graph_container').node().append(data.documentElement)
+            })
+        d3.xml('/img/terminal_opt.svg')
+            .then(data => {
+                d3.select('#terminal_container').node().append(data.documentElement)
+            })
+
+        var volt_per_devision = 3;
+        var volt_per_devision_arr = [0.1,0.5,1,5,10];
+        var voltage_scale_input_decrement = document.querySelector('#voltage_scale_input_decrement');
+        voltage_scale_input_decrement.addEventListener("click", function(){
+            if (volt_per_devision <= 0){
+                console.log("0.1 volts/devision is the minimum value!")
+            } else {
+                volt_per_devision = volt_per_devision - 1;
+                document.getElementById("voltage_scale").innerHTML = volt_per_devision_arr[volt_per_devision];
+                change_voltage_domain(volt_per_devision_arr[volt_per_devision]*10);
+            }
+        })
+        var voltage_scale_input_increment = document.querySelector('#voltage_scale_input_increment');
+        voltage_scale_input_increment.addEventListener("click", function(){
+            if (volt_per_devision >= 4){
+                console.log("10 volts/devision is the maximum value!")
+            } else {
+                volt_per_devision = volt_per_devision + 1;
+                document.getElementById("voltage_scale").innerHTML = volt_per_devision_arr[volt_per_devision]
+                change_voltage_domain(volt_per_devision_arr[volt_per_devision]*10);
+            }
+        })
+
+        var ampere_per_devision = 1.5;
+        var current_scale = document.querySelector('#current_scale');
+        current_scale.addEventListener("click", function(){
+            ampere_per_devision = current_scale.value;
+            change_current_domain(ampere_per_devision*10);
+        })
+
+        var watt_per_devision = 20;
+        var power_scale = document.querySelector('#power_scale');
+        power_scale.addEventListener("click", function(){
+            watt_per_devision = power_scale.value;
+            change_power_domain(watt_per_devision*10);
+        })
+
+        var time_duration = document.querySelector('#time_duration');
+        time_duration.addEventListener("click", function(){
+            duration = time_duration.value * 60;
+        })
+     
+        const interval = 1000; // interval at which data is updated [ms]
+
+        var v_max = 36; // max voltage of ina260-sensor [V]
+        var i_max = 15; // max current of ina260-sensor [A]
+        var p_max = 540 // max power of ina260-sensor [W]
+
+        var v_gauge_max_deg = 270 // max degrees of voltage gauge [°]
+        var i_gauge_max_deg = 270 // max degrees of current gauge [°]
+        var p_gauge_max_deg = 270 // max degrees of power gauge [°]
+
+        function getData(data) {
+            fetch('update', {
+                method: 'GET',
+                headers: { 'Content-Type': 'application/json' }
+            })
+            .then(res => res.json())
+            .then(data => updateUI(data))
+            .catch(err => console.log(err))
+        }
+        
+        function updateUI(data) {
+            //updateChart(voltage, current, power, duration);
+            updateChart(data.voltage, data.current, data.power, duration);
+
+            if (data.voltage < 999.99){
+                d3.select('#milliVolt').text('m');
+            }else{
+                data.voltage = data.voltage/1000;
+                d3.select('#milliVolt').text(' ');
+            }
+            d3.select("#voltageText").text(`${data.voltage.toPrecision(5)}`);
+
+            if (data.current < 999.99){
+                d3.select('#milliAmpere').text('m');
+            }else{
+                data.current = data.current/1000;
+                d3.select('#milliAmpere').text(' ');
+            }
+            if (data.current < 0){
+                data.current = 0;
+            }
+            d3.select("#ampereText").text(`${data.current.toPrecision(5)}`);
+
+            if (data.power < 999.99){
+                d3.select('#milliWatt').text('m');
+            }else{
+                data.power = data.power / 1000;
+                d3.select('#milliWatt').text(' ');
+            }
+            d3.select("#wattText").text(`${data.power.toPrecision(5)}`);
+        }
+
+        function togglePrompt(){
+            var prompt = document.getElementById("prompt");
+            if (prompt.style.fill === "white"){
+                prompt.style.fill= "rgb(4,33,41)";
+            }else{
+                prompt.style.fill = "white";
+            }
+        }
+
+        terminal = document.querySelector('#terminal_container');
+        terminal.addEventListener("click", function() {
+            document.querySelector('.callout').style.display='block';
+            document.getElementById('callout-paragraph').innerHTML = n_users;
+            console.log('terminal has been clicked');
+        });
+
+        // interval for get request
+        setInterval(function(){
+            getData();
+            togglePrompt();
+            //uncomment the following lines to test the user interface without hardware
+            // var voltage = Math.random()*36;
+            // var current = Math.random()*15;
+            // var power = voltage * current;
+            // var sensor_data = {
+            //     "voltage": voltage, 
+            //     "current": current,
+            //     "power"  : power
+            // }
+            // updateUI(sensor_data); 
+        },interval);
+
+        //wait until all svg's are loaded, before the scripts can run
+        window.onload = function(){
+            console.log("page has loaded");
+            let script = document.createElement('script');
+            script.src = "/js/chart.js";
+            document.head.append(script);
+            script = document.createElement('script');
+            script.src = "/js/chart-panel.js";
+            document.head.append(script);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,123 @@
+
+
+body{
+    background-color: gainsboro;
+}
+
+form{
+    padding: 2.5px;
+    margin:1px;
+    border: 2.5px outset lightgray;
+    border-radius: 2.5px;
+    font-family: Ubuntu Condensed;
+    min-height: 45px;
+}
+
+#voltArrow{
+    transform-origin: 50% 50%;
+}
+
+#ampereArrow{
+    transform-origin: 50% 50%;
+}
+#wattArrow{
+    transform-origin: 50% 50%;
+}
+
+.display{
+    border: 2.5px inset lightgray;
+    border-radius: 2.5px;
+    margin:1px;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+.flex-container > div {
+    flex-grow: 1;
+    max-width: 300px;
+    min-width: 100px;
+  }
+
+
+#graph_container{
+    flex-grow: 1;
+    max-width: 900px;
+    min-width: 300px;
+    border: 2.5px inset lightgray;
+    border-radius: 2.5px;
+}
+
+
+#graph_panel_container > div{
+    flex-grow: 1;
+    max-width: 225px;
+    min-width: 100px;
+}
+
+#terminal_container{
+    flex-grow: 1;
+    max-width: 900px;
+    min-width: 200px;
+}
+
+
+
+.heading-container{
+    display: grid;
+    grid-auto-flow: column;
+}
+
+#settings_icon{
+    justify-self: end;
+}
+
+h1{
+    color: rgb(75, 75, 75);
+    font-family: Ubuntu Condensed;
+    margin: 5px;
+}
+
+/* callout box - fixed position at 
+the bottom of the page*/
+.callout{
+    position: fixed;
+    bottom:15px;
+    right:10px;
+    margin-left:20px;
+    max-width:300px;
+    display: none;
+
+}
+
+.callout-header{
+    padding: 15px 15px;
+    padding-bottom: 10px;
+    background: #555;
+    font-size: 30px;
+    color: white;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.callout-container{
+    padding: 15px 15px;
+    background: #ccc;
+    border-radius: 0px 0px 5px 5px;
+
+}
+
+.closebtn{
+    position: absolute;
+    top: 0px;
+    right: 10px;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.closebtn:hover{
+    color: lightgray;
+}

@@ -1,0 +1,51 @@
+
+#graph_container{
+    flex-grow: 1;
+    max-width: 900px;
+    min-width: 300px;
+    border: 2.5px inset lightgray;
+    border-radius: 2.5px;
+}
+
+.line {
+    fill: none;
+    stroke-width: 2px;
+}
+
+#x_axis{
+    color: white;
+}
+
+#y_axis_voltage{
+    color:rgb(207,72,70);
+}
+
+#y_axis_current{
+    color:rgb(110,132,182);
+}
+
+#y_axis_power{
+    color: rgb(117,146,55);
+}
+
+#voltage_path{
+    stroke: rgb(207,72,70);
+}
+
+#current_path{
+    stroke: rgb(110,132,182);
+}
+
+#power_path{
+    stroke: rgb(117,146,55);
+}
+
+.legenditem {
+    float: left;
+    padding-right: 10px;
+}
+
+#graph_2{
+    border:5px inset lightgray;
+    border-radius:5px;
+}
