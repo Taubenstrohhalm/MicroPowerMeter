@@ -26,7 +26,7 @@ Once your phone is connected you can open a browser and enter http://192.168.4.1
 A get-request for the file index.html will be sent from your phones browser to the microcontroller. The microcontroller resonds by sending back the requested file. In the header section of the index.html file a few other files (.css and .js) are requested and will be send to your browser. When all files are transfered an interval function triggers a get-request every 500ms asking the microcontroller for new sensor data. Once received the ui will update.  
 
 ![circuit](/docs/images/ui_preview.png)
-Fig.: UI preview filled with [random data](/hardware/enclosure.blend).
+Fig.: UI preview filled with [random data](/software/README.md).
 
 # 2. Specifications & Accurency
 
@@ -85,7 +85,7 @@ This might be the most difficult part, (you might want to get a drink before you
 If you have a 3D-printer or the fab-lab is not to far you can print an enclosure for your device. You find the .stl files in the hardware directory of this repo. There is also a Blender file, in case you want to add custom text.
 
 ![d1mini](/docs/images/MicroPowerMeter.png)
-Download CAD-file as [[.blend]](/hardware/enclosure.blend)
+Download CAD-file as [[.blend]](/hardware/enclosure_v1.2.blend)
 
 
 ## 4. Software  
