@@ -1,21 +1,18 @@
 # MicroPowerMeter
  
- MicroPython scriptable, wifi enabled, dc-powermeter (36V x 15A ~ 500W). Build around espressif's ESP8266 soc and TI's INA260 current-sensor. Open Source Hard- & Software - for us to hack.   
+ MicroPython scriptable, wifi enabled, dc-powermeter (36V x 15A ~ 500W). Build around espressif's ESP8266 soc and TI's INA260 current-sensor. Open Source Hard- & Software.   
 
-#### status: bugy first prototyp ... build time: ~ 2h  ... cost: ~ 15 € 
+#### ... build time: ~ 2h  ... cost: ~ 15 €
 
-*During the setup of a weathersation I was looking for a efficient way to monitor the power produced by a photovoltaic module. Had to be cheap, quick to build and fun to use. This is what I came up with. It is my first micropython project and I have never used java script before. So don't expect much and feel free to improve.* 
 
-![header_image](/docs/images/header.png)
-**Fig. 1: Header.** Download image as [[.png]]()[[.svg]]()
 
 ## 1. User Guide
 
-The MicroPowerMeter (MPM) can be used, to measure voltages between 0-36 V, currents between 0+-15 A and both current, and voltage at the same time to measure the power consumed by a load or produced by a generator. **Figure 2** shows how to connect the device for each of the three cases. 
+The MicroPowerMeter (MPM) can be used, to measure voltages between 0-36 V, currents between 0+-15 A and both current, and voltage at the same time to measure the power consumed by a load or produced by a generator. 
 
 ![header_image](/docs/images/measure.png)
 
-**Fig. 2: Measuring: a) voltage, b) current c) power.** Download image as [[.png]]()[[.svg]]()
+**Measuring: a) voltage, b) current c) power.** 
 
 You can read the measured values on your phone or any wifi enabled device with a webbrowser. Alternativley you can send the values to another webserver and store them to be viewed from somewhere else. A third option is storing the data on the microcontoller to download them later (not jet implemented).
 
@@ -29,6 +26,7 @@ Once your phone is connected you can open a browser and enter http://192.168.4.1
 A get-request for the file index.html will be sent from your phones browser to the microcontroller. The microcontroller resonds by sending back the requested file. In the header section of the index.html file a few other files (.css and .js) are requested and will be send to your browser. When all files are transfered an interval function triggers a get-request every 500ms asking the microcontroller for new sensor data. Once received the ui will update.  
 
 ![circuit](/docs/images/ui_preview.png)
+Fig.: UI preview filled with [random data](/hardware/enclosure.blend).
 
 # 2. Specifications & Accurency
 
@@ -57,58 +55,46 @@ All the required parts are listed in the bill of materials (BOM) below. Addition
 3| J_1-3|![d1zProto](/docs/images/BOM/goldCon4mm.png)|4mm gold connector female||
 1| J4 || 8 x Pinheader male|
 1| J5 || wire|  
-|||||moneys
-Download BOM_v0.10 as [.xls][.odt]
+Table: BOM_v0.10
 
-     * there are different versions of this board available. Only the version shown in figure xx works for this project. You can also use standard prototyping board and cut it to size. 
+     * there are different versions of this board available. Only the version shown in the BOM works for this project. You can also use standard prototyping board and cut it to size. 
 
-### 3.1.2 Schematic  
+### Schematic  
 
-Figure xx shows the schematics for the MicroPowerMeter. The rectangle on the left labeled Wemos D1 mini is the dev board for the esp8266. On this printed circuit board (PCB) sits the ESP8266, a wifi antenna, a reset button, a micro USB-port and the integrated circuit (IC) for a serial connection to your computer.
-On the right you see the breakout board for the current sensor (INA260). In this tiny IC is where the magic happens. You can find a full schematic of this breakoutboard at: xxx.
+The rectangle on the left labeled Wemos D1 mini is the dev board for the esp8266. On this printed circuit board (PCB) sits the ESP8266, a wifi antenna, a reset button, a micro USB-port and the IC for a serial connection to your computer.
+On the right you see the breakout board for the current sensor (INA260). In this tiny IC is where the magic happens.
 
 ![circuit](/hardware/mpm_schem.png)
-Fig. X: Schematic. Download image as [[.png]]()[[.pdf]]()[[.fzz]]()
 
-### 3.1.3 Soldering
 
-Assembling the electonics requires some soldering. If you have never soldered before check out this [awesome soldering guide](https://learn.adafruit.com/adafruit-guide-excellent-soldering) by adafruit.
+### 3.2 Soldering
 
-#### 2.2.1. Wemos D1 mini
-Soldere the two female pin-headers to the wemos D1 mini as shown in figure xx.
+Assembling the electronics requires some soldering. If you have never soldered before check out this [awesome soldering guide](https://learn.adafruit.com/adafruit-guide-excellent-soldering) by adafruit.
 
-#### 2.2.2. Sensor board
+#### 3.2.1. Wemos D1 mini
+Solder the two female pin-headers to the wemos D1 mini.
+
+#### 3.2.2. Sensor board
 Unfortunatly the sensor can not directly be connected to the Wemos D1 mini. A adapter board is needed. The following pictures show the soldering process of the adapter board. *If you are familiar with KiCAD, or any other e-cad software please consider having a look at the to-do list.*
 This might be the most difficult part, (you might want to get a drink before you start.) 
 
 ![circuit](/docs/images/assembly_step_by_step_v1.1.png)
 
-##### 1. blabla
-##### 2. blabla
-##### 3. blabla
-##### 4. blabla
+#### 3.3 Enclosure
+
+If you have a 3D-printer or the fab-lab is not to far you can print an enclosure for your device. You find the .stl files in the hardware directory of this repo. There is also a Blender file, in case you want to add custom text.
+
+![d1mini](/docs/images/MicroPowerMeter.png)
+Download CAD-file as [[.blend]](/hardware/enclosure.blend)
 
 
-
-#### 2.2.3 Putting the parts together
-
-Now you can just stack the adapter board with the current sensor onto the wemos d1 mini.
-
-#### 2.3 Enclosure
-
-If you have a 3D-printer or the fab-lab is not to far you can print an enclosure for your device. You find the .stl files in the hardware directory of this repo. There is also a Blender file, in case you want to add custom text. You can find a description on how to do that [here](link/to/wiki).
-
-![d1mini](/hardware/enclosure.png)
-Download CAD-file as[[.stl]]() [[.blend]](/hardware/enclosure.blend)
-
-
-## 3. Software  
+## 4. Software  
 
 Micropython Firmware  
-RESTfull Webserver 
+RESTfull Webserver
  - d3
 
-# Setting up a integrated development environment (IDE) for MicroPython
+# Setting the IDE for MicroPython
 
 In order to tell the microcontroller what we want it to do we need to write some code and store it on the microcontroller. We will be using MicroPython as the programming language and Pymakr to communicate with the microcontroller.  
 Pymakr is a plugin, available for the code editors Atom and VisualStudio Code (VS-code). Both are free and Open Source and available for Windows, Linux and Mac. This guide will show you how to set up the IDE on a Microsoft Windows using visual studio code.  
@@ -166,18 +152,14 @@ Then press the "upload" button. After the upload process is done, the MCU will r
 
 ## use - study - share - improve 
 
-Have a look at the **to do** and **wish list**'s. If you feel like one of the tasks is yours, you can clone this repo, commit your changes and post a pull request. So fare everything you can find in this repo has been created using free & open source software. If you contribute, it would be great if you follow this pattern, so everybody can learn and contribute from/to your improvements. 
-
-If you have questions or ideas for the wish list please post an issue.
+Have a look at the **to do list**. If you feel like one of the tasks is yours, you can clone this repo, commit your changes and post a pull request. So fare everything you can find in this repo has been created using free & open source software. If you contribute, it would be great if you follow this pattern.
 
 ### To Do's:
 + Documentation
-  + write/make graphics for assembly instructions -wip
-  + write/make graphics for user guide + add to webserver
   + add missing parts (D1z proto, 4mm gold connector) to fritzing library & update layout.png
   + write guide on how to send, store and graph measured data on external webserver (for example via mqtt, influxDB, Grafana)
   + write guide on how to use boolean operators in blender to change the text 
-+ MicroPython Firmware
++ Firmware
   + use server-sent-events or websockets for sending sensor-data
   + add code for status led's (hearbeat on connect, blink while waiting for connection, etc.)
   + make webserver asynchron
@@ -187,15 +169,10 @@ If you have questions or ideas for the wish list please post an issue.
   + write data to .csv file
   + add proper logging
   + function complete library for ina260
-+ Frontend
++ Web-Frontend
   + integrate webREPL in UI
   + improve UI (please post inspiration in issue
   + add user guide
 + Hardware
   + design stackable enclosure 
   + design custom pcb for INA260 to replace D1z proto and adafruit INA260 (reduce cost, size and assembly time) 
-
-### Wishes:
- + add timeseries of measurements in UI (something like this: https://bl.ocks.org/boeric/6a83de20f780b42fadb9 or https://observablehq.com/@bartok32/real-time-area-chart)
-
-
